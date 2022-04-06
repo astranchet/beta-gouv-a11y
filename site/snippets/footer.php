@@ -46,8 +46,8 @@
 		</div>
 	</footer>
 
-	<script type="module" src="/dsfr/dsfr.module.min.js"></script>
-	<script type="text/javascript" nomodule src="/dsfr/dsfr.nomodule.min.js"></script>
+	<script type="module" src="/assets/dsfr/dsfr.module.min.js"></script>
+	<script type="text/javascript" nomodule src="/assets/dsfr/dsfr.nomodule.min.js"></script>
 
 </body>
 
