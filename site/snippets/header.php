@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Ressources d'accessibilité</title>
+	<title><?= $page->isHomePage() ? $site->title() : $page->title() . ' - ' . $site->title(); ?></title>
 	<meta name="theme-color" content="#000091">
 	<link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png"><!-- 180×180 -->
 	<link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
