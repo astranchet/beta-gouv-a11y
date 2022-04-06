@@ -8,8 +8,9 @@
 	<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png"><!-- 180×180 -->
 	<link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
 	<link rel="manifest" href="favicon/manifest.webmanifest" crossorigin="use-credentials">
-	<link href="/dsfr/dsfr.min.css" rel="stylesheet" file="main">
-	<link href="/dsfr/dsfr.legacy.min.css" rel="stylesheet" file="legacy">
+
+	<?= css(['assets/dsfr/dsfr.min.css', 'main']) ?>
+    <?= css('assets/dsfr/dsfr.legacy.min.css', 'legacy') ?>
 
 	<script>
 		window['dsfr'] = {
