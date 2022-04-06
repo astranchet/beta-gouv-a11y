@@ -1,0 +1,65 @@
+Title: Audit flash
+----
+
+Desc: L'audit flash permet de se préparer à un audit de conformité et de détecter les défauts les plus évidents.
+----
+
+Intro:
+
+## Critères 
+
+(Descriptions à venir)
+
+----
+
+Items:
+- 
+  title: Le code HTML est valide
+- 
+  title: La page d'accueil est accessible depuis toutes les pages
+- 
+  title: Le titre de la page est pertinent
+- 
+  title: Le niveau d'accessibilité est affiché sur toutes les pages
+- 
+  title: Une page est dédiée à l’accessibilité
+- 
+  title: La langue du site est pertinente
+- 
+  title: Il existe 2 moyens de naviguer
+- 
+  title: Chaque page contient des liens d'accès rapide
+- 
+  title: Le site est utilisable au clavier
+- 
+  title: Aucune information n'est véhiculée uniquement par la couleur
+- 
+  title: Les éléments sont suffisement contrastés
+- 
+  title: Les actions sont explicites
+- 
+  title: L'utilisateur est averti de l'ouverture d'une nouvelle fenêtre
+- 
+  title: Le site est responsive
+- 
+  title: Le contenu est lisible lorsqu'on zoome
+- 
+  title: Le site est compréhensible sans styles
+- 
+  title: L'utilisateur a le droit à l’erreur
+- 
+  title: Chaque champ formulaire a une étiquette
+- 
+  title: Les CAPTCHA ont une alternative
+- 
+  title: Les mouvements automatiques peuvent être arrêtés
+- 
+  title: Les fichiers en téléchargement sont accessible
+- 
+  title: Les zones principales sont définies
+- 
+  title: La hiérarchie des titres est cohérente
+- 
+  title: Les images ont une alternative
+- 
+  title: Les vidéos ont une alternative

@@ -1,0 +1,98 @@
+Title: Auto-diagnostic
+----
+
+Desc: L'auto-diagnostic permet d’évaluer, sans compétence technique, les plus gros points bloquants en accessibilité.
+
+----
+
+Intro:
+
+## 10 choses faciles à vérifier
+
+----
+
+Items:
+- 
+  title: Titre des pages
+  desc: "Le titre de page permet de se situer : c’est la première chose lue par un lecteur d'écran à l’affichage d’une page ou d’un onglet. Les bons titres de pages aident à s'orienter entre plusieurs onglets."
+  who: "les personnes utilisant un lecteur d’écran ou les favoris du navigateur. Et aussi les moteurs de recherche."
+  methodo: >
+  
+  	- Ouvrir plusieurs pages du site dans des onglets différents.
+  
+  verification : >
+
+  	- Le titre est pertinent.
+	  - Le titre décrit brièvement le contenu de la page.
+- 
+  title: Alternatives aux images
+  desc: ""
+  who: ""
+  methodo: >
+  	- b
+  verification : >
+  	- b
+- 
+  title: Hiérarchie de l’information
+  desc: ""
+  who: ""
+  methodo: >
+  	- b
+  verification : >
+  	- b
+- 
+  title: Contraste des couleurs
+  desc: ""
+  who: ""
+  methodo: >
+  	- b
+  verification : >
+  	- b
+- 
+  title: Personnalisation du texte
+  desc: ""
+  who: ""
+  methodo: >
+  	- b
+  verification : >
+  	- b
+- 
+  title: Navigation au clavier
+  desc: ""
+  who: ""
+  methodo: >
+  	- b
+  verification : >
+  	- b
+- 
+  title: Formulaires
+  desc: ""
+  who: ""
+  methodo: >
+  	- b
+  verification : >
+  	- b
+- 
+  title: Contenus animés
+  desc: ""
+  who: ""
+  methodo: >
+  	- b
+  verification : >
+  	- b
+- 
+  title: Alternatives aux médias
+  desc: ""
+  who: ""
+  methodo: >
+  	- b
+  verification : >
+  	- b
+- 
+  title: Structure des pages
+  desc: ""
+  who: ""
+  methodo: >
+  	- b
+  verification : >
+  	- b
