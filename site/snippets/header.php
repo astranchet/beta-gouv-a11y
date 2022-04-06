@@ -54,8 +54,8 @@
 							</div>
 						</div>
 						<div class="fr-header__service">
-							<a href="/" title="Accueil - [À MODIFIER - Nom du site / service] - [À MODIFIER - nom de l’entité (ministère, secrétariat d‘état, gouvernement)]">
-								<p class="fr-header__service-title">Ressource d'accessibilité</p>
+							<a href="/" title="Accueil - <?= $site->title() ?>">
+								<p class="fr-header__service-title"><?= $site->title() ?></p>
 							</a>
 							<!-- <p class="fr-header__service-tagline">baseline - précisions sur l‘organisation</p> -->
 						</div>
@@ -73,14 +73,20 @@
 				<nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
 					<ul class="fr-nav__list">
 						<li class="fr-nav__item">
-							<a class="fr-nav__link" href="<?= $site->url() ?>" target="_self">Accueil</a>
+							<a class="fr-nav__link" href="<?= $site->url() ?>" target="_self" <?php e($site->page('home')->isActive(), ' aria-current="true"') ?>>Accueil</a>
 						</li>
-
-						<?php foreach ($site->page('a11y')->children() as $item) { ?>
-                  			<li class="fr-nav__item"><a class="fr-nav__link" target="_self" href="<?= $item->url() ?>" <?php e($item->isActive(), 'aria-current="page"') ?>>
-                    			<?= $item->title() ?>
-                  			</a></li>
-                		<?php } ?>
+						<li class="fr-nav__item">
+              <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-a11y" <?php e($site->page('a11y')->isOpen(), ' aria-current="true"') ?>>Accessibilité</button>
+              <div class="fr-collapse fr-menu" id="menu-a11y">
+                <ul class="fr-menu__list">
+                	<?php foreach ($site->page('a11y')->children() as $item) { ?>
+          					<li><a class="fr-nav__link" target="_self" href="<?= $item->url() ?>" <?php e($item->isActive(), 'aria-current="page"') ?>>
+            					<?= $item->title() ?>
+          					</a></li>
+        					<?php } ?>
+                </ul>
+              </div>
+          </li>
 					</ul>
 				</nav>
 			</div>
