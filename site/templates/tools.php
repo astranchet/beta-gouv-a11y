@@ -16,15 +16,18 @@
 				</thead>
 				<tbody>
 					<?php foreach ($page->tools()->toStructure() as $tool): ?>
-						<tr>
-							<td><a class="fr-link" href=""><?= $tool->title() ?></a></td>
-							<td><p class="fr-badge fr-badge--pink-tuile">Tutorial</p></td>
-						</tr>
-					<?php endforeach ?>
-				</tbody>
-			</table>
-		</div>
+					<tr>
+						<td><a class="fr-link" href="<?= $tool->url() ?>"><?= $tool->title() ?></a></td>
+						<td>
+							<?php foreach ($tool->type()->split() as $type): ?>
+							<p class="fr-badge fr-badge--pink-tuile"><?= $type ?></p>
+						<?php endforeach ?>
+					</tr>
+				<?php endforeach ?>
+			</tbody>
+		</table>
 	</div>
+</div>
 </main>
 
 <?php snippet('footer') ?>
