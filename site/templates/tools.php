@@ -27,7 +27,6 @@
 			</tbody>
 		</table>
 	</div>
-</div>
 </main>
 
 <?php snippet('footer') ?>

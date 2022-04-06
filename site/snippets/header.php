@@ -73,17 +73,14 @@
 				<nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
 					<ul class="fr-nav__list">
 						<li class="fr-nav__item">
-							<a class="fr-nav__link" href="/" target="_self">Accueil</a>
+							<a class="fr-nav__link" href="<?= $site->url() ?>" target="_self">Accueil</a>
 						</li>
-						<li class="fr-nav__item">
-							<a class="fr-nav__link" href="auto-diag.html" target="_self">Auto-diagnostic</a>
-						</li>
-						<li class="fr-nav__item">
-							<a class="fr-nav__link" href="#" target="_self">Audit flash</a>
-						</li>
-						<li class="fr-nav__item">
-							<a class="fr-nav__link" href="ressources.html" target="_self" aria-current="page">Ressources</a>
-						</li>
+
+						<?php foreach ($site->page('a11y')->children() as $item) { ?>
+                  			<li class="fr-nav__item"><a class="fr-nav__link" target="_self" href="<?= $item->url() ?>" <?php e($item->isActive(), 'aria-current="page"') ?>>
+                    			<?= $item->title() ?>
+                  			</a></li>
+                		<?php } ?>
 					</ul>
 				</nav>
 			</div>
