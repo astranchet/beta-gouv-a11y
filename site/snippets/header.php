@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Ressources d'accessibilité</title>
 	<meta name="theme-color" content="#000091">
-	<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png"><!-- 180×180 -->
-	<link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
-	<link rel="manifest" href="favicon/manifest.webmanifest" crossorigin="use-credentials">
+	<link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png"><!-- 180×180 -->
+	<link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
+	<link rel="manifest" href="/assets/favicon/manifest.webmanifest" crossorigin="use-credentials">
 
 	<?= css(['assets/dsfr/dsfr.min.css', 'main']) ?>
     <?= css('assets/dsfr/dsfr.legacy.min.css', 'legacy') ?>
