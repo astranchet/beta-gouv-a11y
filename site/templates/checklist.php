@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('dsfr/header') ?>
 
 <main id="content" role="main">
 	<div class="fr-container fr-container--fluid fr-my-8w">
@@ -10,7 +10,7 @@
 			<div class="fr-container">
 			<div class="fr-grid-row fr-grid-row--gutters">
 				<div class="fr-col-12 fr-col-md-4">
-					<?php snippet('sidemenu', [
+					<?php snippet('dsfr/sidemenu', [
 						'items' => $page->items()->toStructure(),
 						'title' => 'Auto-diagnostic',
 						'button' => "Voir les étapes de l'auto-diagnostic"
@@ -33,4 +33,4 @@
 	</div>
 </main>
 
-<?php snippet('footer') ?>
+<?php snippet('dsfr/footer') ?>

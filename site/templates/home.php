@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('dsfr/header') ?>
 
 <main id="content" role="main">
 	<div class="fr-container fr-container--fluid fr-my-8w">
@@ -15,4 +15,4 @@
 	</div>
 </main>
 
-<?php snippet('footer') ?>
+<?php snippet('dsfr/footer') ?>

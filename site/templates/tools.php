@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('dsfr/header') ?>
 
 <main id="content" role="main">
 	<div class="fr-container fr-container--fluid fr-my-8w">
@@ -27,7 +27,10 @@
 					<tr>
 						<td>
 							<?php foreach ($tool->type()->split() as $type): ?>
-							<p class="fr-badge fr-badge--<?= $colors[$type] ?>"><?= $type ?></p>
+								<?php snippet('dsfr/badge', [
+									'color' => $colors[$type],
+									'value' => $type,
+								]) ?>
 							<?php endforeach ?>
 						</td>
 						<td><a class="fr-link fr-fi-arrow-right-line fr-link--icon-right" href="<?= $tool->url() ?>"><?= $tool->title() ?></a></td>
@@ -38,4 +41,4 @@
 	</div>
 </main>
 
-<?php snippet('footer') ?>
+<?php snippet('dsfr/footer') ?>
