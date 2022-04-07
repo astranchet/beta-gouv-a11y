@@ -1,7 +1,7 @@
-Title: Auto-diagnostic
+Title: Auto diagnostic
 ----
 
-Desc: L'auto-diagnostic permet d’évaluer, sans compétence technique, les plus gros points bloquants en accessibilité.
+Desc: L'auto-diagnostic permet d’évaluer, sans compétence technique, les plus gros points bloquants pour les personnes en situation de handicap.
 
 ----
 
@@ -12,87 +12,120 @@ Intro:
 ----
 
 Items:
-- 
-  title: Titre des pages
-  desc: "Le titre de page permet de se situer : c’est la première chose lue par un lecteur d'écran à l’affichage d’une page ou d’un onglet. Les bons titres de pages aident à s'orienter entre plusieurs onglets."
-  who: "les personnes utilisant un lecteur d’écran ou les favoris du navigateur. Et aussi les moteurs de recherche."
-  methodo: >
-  
-  	- Ouvrir plusieurs pages du site dans des onglets différents.
-  
-  verification : >
+Titre des pages: 
+  desc: "**Le titre de page permet de se situer**. C’est la première chose lue par un lecteur d'écran à l’affichage d’une page ou d’un onglet. Les bons titres de pages aident à s'orienter entre plusieurs onglets."
+  who: "Les personnes utilisant un lecteur d’écran ou les favoris du navigateur. Et aussi les moteurs de recherche."
+  test: des onglets
+  steps:
+    - Ouvrir plusieurs pages du site dans des onglets différents.
+  checks:
+    - Le titre est pertinent.
+    - Le titre est bref.
+    - Le titre est unique.
+Alternatives aux images: 
+  desc: "**Les alternatives transmettent l'objectif de l’image**. Ils sont lus par les lecteurs d’écrans (ou ressenti sur une plage braille). Parfois, ils sont affichés à la place de l'image quand la connexion est mauvaise."
+  who: "Les personnes utilisant un lecteur d’écran et celles ayant une connexion restreinte."
+  test: des textes alternatifs
+  steps:
+    - Afficher les textes alternatifs des images avec un outil dédié.
+  checks :
+    - L’alternative permet de comprendre le contenu.
+    - Les images décoratives n’ont pas d’alternative.
+Hiérarchie de l’information: 
+  desc: "**La structure de la page est balisée**. Certains éléments de textes sont important dans la page : ils sont mis en avant visuellement. Ils doivent l’être aussi dans le code via les balises dédiées."
+  who: "Les personnes qui naviguent au clavier, celles qui utilisent un lecteur d’écran, celles qui affichent le site sans style, les personnes qui ont des troubles cognitifs."
+  test: du plan
+  steps:
+    - Lire le plan de la page avec un outil dédié.
+  checks :
+    - Le plan est pertinent.
+    - Le plan reflète les titres mis en valeur visuellement.
+    - La hiérarchie des titres n’a pas de trous.
+Contraste des couleurs:
+  desc: "**Les couleurs du site n’entravent pas la lecture.**"
+  who: "Les personnes ayant des troubles de vision (personnes âgées, sensibilités au contraste) ou ayant des difficultés cognitives (de concentration ou de lecture)."
+  test: des couleurs
+  steps:
+    - Vérifier les contrastes de la page avec un outil dédié.
+  checks :
+    - Les textes sont suffisamment contrastés (niveau AA).
+    - Les éléments interactifs sont suffisamment contrastés (niveau AA).
+Personnalisation du texte: 
+  desc: "**Le texte est adaptable** : un texte peut être adapté de multiples façons : couleur, taille, police, interlignes… via les préférences du navigateur. Si le site est mal conçu, il devient inutilisable, ou le contenu illisible."
+  who: "Les personnes ayant besoin de modifier l’apparence du texte (taille, police, interlignage) : troubles de la vision, dyslexie, vieillesse..."
+  test: du zoom
+  steps:
+    - Zoomer à 200 % et naviguer sur le site.
+  checks :
+    - Tout les textes sont agrandi (aucun n'est une image). 
+    - Aucun texte ne disparaît ou n'est pas coupé.
+    - Aucun contenu ne se chevauche.
+    - Tous les formulaires sont visibles et utilisables.
+    - Aucun défilement horizontal n'est nécessaire pour lire le contenu. 
+Navigation au clavier:
+  desc: "L'interface est utilisable sans souris : certaines personnes utilisent le clavier ou la saisie vocale (qui utilise des commandes clavier). L’ensemble du contenu et des fonctionnalités doit donc être accessible via le clavier : liens, formulaires, pause/play sur les lecteurs médias, menus..."
+  who: "Les personnes n'utilisant pas de souris : personnes ayant des troubles moteurs, personnes aveugles, malvoyantes, utilisant la saisie vocale…"
+  test: de la souris perdue
+  steps:
+    - Utiliser le site sans manipuler la souris.
+  checks :
+    - Le focus du clavier est visible.
+    - L’ordre de navigation est logique.
+    - Tous les éléments sont actionnables (liens, menus déroulants, boutons, vidéos…)
+    - Le focus ne reste pas coincé (on peut sortir d’une vidéo par exemple).
+Formulaires:
+  desc: "Les formulaires sont balisés correctement : un formulaire est composé de champs, qui doivent être correctement balisés pour pouvoir être rempli au clavier, par commande vocale ou via un lecteur d'écran. Les aides à la saisie et messages d’erreurs doivent être placés de manière pertinentes pour être visible (et utile) pour tous. C’est l’un des tests le plus compliqué mais aussi celui qui a le plus d’impact 💪."
+  who: "Les personnes qui n’utilisent pas la souris, qui ont des problèmes de motricité, ou des troubles cognitifs ou d’apprentissage."
+  test: des formulaires
+  steps:
+    - Identifier tous les formulaires du site (même les petits, comme un formulaire de recherche ou d'inscription à une newsletter).
+  checks :
+    - Chaque champ a son libellé.
+    - Les champs obligatoires sont indiqués (pas seulement par la couleur rouge).
+    - Les formulaires sont actionnable au clavier (autocomplete, envoi...)
+    - Les formats spécifiques (dates) sont expliqués.
+    - Les erreurs sont explicites (quel champ est concerné, comment corriger).
+Contenus animés:
+  desc: >
+    "**Les animations ne doivent pas perturber la lecture**. Les utilisateurs doivent pouvoir contrôler le contenu en mouvement pour :
+    - Avoir le temps de traiter une information (vidéo, carousel)
+    - Pouvoir se concentrer sur le contenu sans être distrait par un élément.
+    - Ne pas faire de crise d’épilepsie."
+  who: "Les personnes ayant des troubles de l’attention ou de la compréhension et les personnes épileptiques."
+  test: des animations
+  steps:
+    - Identifier les contenus qui bougent ou clignotent.
+  checks :
+    - Les mouvements s’arrêtent après 5 secondes, ou peuvent être stoppés.
+    - Les informations en temps réelles peuvent être mise en pause.
+    - Aucun contenu ne clignote plus de trois fois en une seconde.
+Alternatives aux médias:
+  desc: "**Les médias ont des alternatives**. Les podcasts ou formats audios ne sont pas accessibles aux personnes sourdes ou malentendantes, sauf si fournies dans un format alternatif (transcription par ex). 
+  Les informations visuelles d’une vidéo ne sont pas accessibles aux personnes aveugles ou malvoyantes, sauf si elles sont fournies dans un format alternatif tel que l'audio ou le texte."
+  who: "Les personnes malentendantes, malvoyantes, sourdes ou aveugles."
+  test: des médias
+  steps:
+    - Identifier les médias (vidéos et audio) du service.
+  checks :
+    - Les contrôles du lecteurs vidéo/audio sont accessible au clavier
+    - Le son ne démarre pas seul.
+    - Le contenu audio est accessible au format texte (sous-titres ou transcript).
+    - Les visuels sont accessibles au format texte ou audio (audiodescription, transcript)
+Structure des pages:
+  desc: "**La page est linéaire**. Tout le monde ne « voit » pas une page de la même manière. Un site a souvent une structure complexe visuellement (sidebar, éléments graphiques...) mais pour certains utilisateurs, il sera perçu de manière linéaire."
+  who: "Les personnes utilisant un lecteur d’écran, une feuille de style personnalisée ou utilisant le site sur mobile."
+  test: du site tout nu
+  steps:
+    - Désactiver les images et les styles.
+  checks :
+    - Les informations sont affichées dans le bon ordre.
+    - Le contenu est pertinent et compréhensible.
 
-  	- Le titre est pertinent.
-	  - Le titre décrit brièvement le contenu de la page.
-- 
-  title: Alternatives aux images
-  desc: ""
-  who: ""
-  methodo: >
-  	- b
-  verification : >
-  	- b
-- 
-  title: Hiérarchie de l’information
-  desc: ""
-  who: ""
-  methodo: >
-  	- b
-  verification : >
-  	- b
-- 
-  title: Contraste des couleurs
-  desc: ""
-  who: ""
-  methodo: >
-  	- b
-  verification : >
-  	- b
-- 
-  title: Personnalisation du texte
-  desc: ""
-  who: ""
-  methodo: >
-  	- b
-  verification : >
-  	- b
-- 
-  title: Navigation au clavier
-  desc: ""
-  who: ""
-  methodo: >
-  	- b
-  verification : >
-  	- b
-- 
-  title: Formulaires
-  desc: ""
-  who: ""
-  methodo: >
-  	- b
-  verification : >
-  	- b
-- 
-  title: Contenus animés
-  desc: ""
-  who: ""
-  methodo: >
-  	- b
-  verification : >
-  	- b
-- 
-  title: Alternatives aux médias
-  desc: ""
-  who: ""
-  methodo: >
-  	- b
-  verification : >
-  	- b
-- 
-  title: Structure des pages
-  desc: ""
-  who: ""
-  methodo: >
-  	- b
-  verification : >
-  	- b
+----
+
+Conclusion: >
+
+  ## Ressources
+
+  - (link:# text: S'inscrire à la prochaine formation/atelier)
+  - (link:# text: télécharger le PDF)
