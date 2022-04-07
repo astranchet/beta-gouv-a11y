@@ -1,1 +1,18 @@
-Title: Accueil
+Title: Accessibilité
+
+----
+
+Cards:
+
+-
+	title: Auto-diagnostic
+	desc: 2 heures pour identifier les plus gros problèmes d'accessibilités.
+	link: /a11y/0-auto-diag
+-
+	title: Audit flash
+	desc: Une demi-journée pour identifier et prioriser les problèmes d'accessibilité.
+	link: /a11y/1-audit-flash
+- 
+	title: Ressources
+	desc: Outils pour faciliter les audits d'accessibilité
+	link: /a11y/tools
