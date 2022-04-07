@@ -1,7 +1,7 @@
 <div class="fr-card fr-enlarge-link">
     <div class="fr-card__body">
         <h4 class="fr-card__title">
-            <a href="<?php $card->link() ?>" class="fr-card__link"><?= $card->title() ?></a>
+            <a href="<?= $card->link() ?>" class="fr-card__link"><?= $card->title() ?></a>
         </h4>
         <p class="fr-card__desc"><?= $card->desc() ?></p>
         <p class="fr-card__detail"><?= $card->detail() ?></p>
