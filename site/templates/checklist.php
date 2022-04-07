@@ -28,21 +28,7 @@
 			</div>
 		</div>
 
-		<div class="fr-accordions-group">
-			<?php foreach ($page->items()->toStructure() as $key => $item): ?>
-			<section class="fr-accordion">
-				<h3 class="fr-accordion__title">
-					<button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-<?= $key ?>"><?= $item->id() ?></button>
-				</h3>
-				<div class="fr-collapse" id="accordion-<?= $key ?>">
-					<?php snippet('auto-diag', ['item' => $item]) ?>					
-				</div>
-			</section>
-			<?php endforeach ?>
-		</div>
-
 		<?= $page->conclusion()->kt() ?>
-
 	</div>
 	</div>
 </main>

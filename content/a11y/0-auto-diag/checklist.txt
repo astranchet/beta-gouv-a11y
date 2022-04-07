@@ -122,10 +122,3 @@ Structure des pages:
     - Le contenu est pertinent et compréhensible.
 
 ----
-
-Conclusion: >
-
-  ## Ressources
-
-  - (link:# text: S'inscrire à la prochaine formation/atelier)
-  - (link:# text: télécharger le PDF)
