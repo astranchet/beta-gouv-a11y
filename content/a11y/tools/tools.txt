@@ -40,3 +40,7 @@ Tools:
   title: Activer le focus sur firefox macOS 	
   url: https://marieguillaumet.com/activer-la-prise-de-focus-dans-firefox-sur-macos/#firefox
   type: Tutorial
+- 
+  title: Web Developpeur (Firefox) 
+  url: https://addons.mozilla.org/fr/firefox/addon/web-developer/
+  type: Plugin

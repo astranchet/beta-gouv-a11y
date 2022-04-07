@@ -10,18 +10,27 @@
 				<caption>Outils d'auto-diagnostic</caption>
 				<thead>
 					<tr>
-						<th scope="col">Nom</th>
 						<th scope="col">Type</th>
+						<th scope="col">Nom</th>
 					</tr>
 				</thead>
 				<tbody>
 					<?php foreach ($page->tools()->toStructure() as $tool): ?>
+					<?php 
+						$colors = [
+							'Plugin' => 'green-menthe',
+							'Bookmarklet' => 'green-tilleul-verveine',
+							'Outil en ligne' => 'green-bourgeon',
+							'Tutorial' => 'pink-tuile'
+						]
+					?>
 					<tr>
-						<td><a class="fr-link" href="<?= $tool->url() ?>"><?= $tool->title() ?></a></td>
 						<td>
 							<?php foreach ($tool->type()->split() as $type): ?>
-							<p class="fr-badge fr-badge--pink-tuile"><?= $type ?></p>
-						<?php endforeach ?>
+							<p class="fr-badge fr-badge--<?= $colors[$type] ?>"><?= $type ?></p>
+							<?php endforeach ?>
+						</td>
+						<td><a class="fr-link fr-fi-arrow-right-line fr-link--icon-right" href="<?= $tool->url() ?>"><?= $tool->title() ?></a></td>
 					</tr>
 				<?php endforeach ?>
 			</tbody>
