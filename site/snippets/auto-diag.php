@@ -12,18 +12,17 @@
 <?php foreach ($item->steps()->yaml() as $step): ?>
 	<p><?= $step ?></p>
 <?php endforeach ?>
-</ol>
 
 <div class="fr-form-group">
 	<fieldset class="fr-fieldset">
 		<div class="fr-fieldset__content">
-			<?php foreach ($item->checks()->yaml() as $check): ?>
+			<?php foreach ($item->checks()->yaml() as $id => $check): ?>
 			<div class="fr-checkbox-group">
-				<input type="checkbox" id="checkboxes-1" name="checkboxes-1">
-				<label class="fr-label" for="checkboxes-1"><?= $check ?>
+				<input type="checkbox" id="checkboxes-<?= $item->test()->slug().$id ?>" name="checkboxes-<?= $item->test()->slug().$id ?>">
+				<label class="fr-label" for="checkboxes-<?= $item->test()->slug().$id ?>"><?= $check ?>
 			</label>
+			</div>
+			<?php endforeach ?>
 		</div>
-	<?php endforeach ?>
-</div>
-</fieldset>
+	</fieldset>
 </div>

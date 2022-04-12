@@ -21,7 +21,7 @@
 				<?php foreach ($page->items()->toStructure() as $key => $item): ?>
 					<section id="<?= $key ?>" class="fr-mb-8w">
 						<h3><?= $item->id() ?></h3>
-						<?php snippet('auto-diag', ['item' => $item]) ?>					
+						<?php snippet('auto-diag', ['key' => $key, 'item' => $item]) ?>					
 					</section>
 					<?php endforeach ?>
 				</div>

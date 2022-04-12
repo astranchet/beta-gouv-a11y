@@ -10,7 +10,6 @@
 	<link rel="manifest" href="/assets/favicon/manifest.webmanifest" crossorigin="use-credentials">
 
 	<?= css(['assets/dsfr/dsfr.min.css', 'main']) ?>
-    <?= css('assets/dsfr/dsfr.legacy.min.css', 'legacy') ?>
 
 	<script>
 		window['dsfr'] = {
