@@ -17,7 +17,7 @@
 					<button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-<?= $key ?>"><?= $item->title() ?></button>
 				</h3>
 				<div class="fr-collapse" id="accordion-<?= $key ?>">
-					<?php snippet('auto-flash', ['item' => $item]) ?>					
+					<?php snippet('audit-flash', ['item' => $item]) ?>					
 				</div>
 			</section>
 			<?php endforeach ?>

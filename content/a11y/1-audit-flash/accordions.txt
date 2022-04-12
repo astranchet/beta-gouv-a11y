@@ -15,10 +15,28 @@ Intro:
 Items:
 - 
   title: Le code HTML est valide
+  who: Les personnes qui utilisent une technologie d’assitance.
+  steps:
+    - Utiliser le validateur officiel du W3C
+  checks:
+    - La page ne comporte aucunes erreurs HTML
+  criteres:
+    - 8.1
+    - 8.2
 - 
   title: La page d'accueil est accessible depuis toutes les pages
 - 
   title: Le titre de la page est pertinent
+  who: "Les personnes aveugles, les personnes qui utilisent les favoris ou naviguent sur plusieurs onglets en même temps."
+  steps:
+    - Ouvrir différentes pages du service dans différents onglets
+  checks: 
+    - Chaque nom de page est unique
+    - Chaque nom de page est pertinent
+    - Chaque nom de page est court
+  criteres:
+    - 8.5
+    - 8.6
 - 
   title: Le niveau d'accessibilité est affiché sur toutes les pages
 - 
