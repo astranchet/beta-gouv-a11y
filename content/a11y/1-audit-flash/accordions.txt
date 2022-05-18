@@ -73,28 +73,62 @@ Items:
     - 3.3
 - 
   title: Les actions sont explicites
+  criteres:
+    - 6.1
+    - 6.2
+    - 11.9
 - 
   title: L'utilisateur est averti de l'ouverture d'une nouvelle fenêtre
+  criteres:
+    - 13.2
 - 
   title: Le site est responsive
+  criteres:
+    - 10.11
 - 
   title: Le contenu est lisible lorsqu'on zoome
+  criteres:
+    - 10.4
 - 
   title: Le site est compréhensible sans styles
+  criteres:
+    - 10.1
+    - 10.2
+    - 10.3
 - 
   title: L'utilisateur a le droit à l’erreur
+  criteres:
+    - 11.12
+    - 13.11
 - 
   title: Chaque champ formulaire a une étiquette
+  criteres:
+    - 11.1
+    - 11.2
+    - 11.3
+    - 11.4
 - 
   title: Les CAPTCHA ont une alternative
+  criteres:
+    - 1.4
+    - 1.5
 - 
   title: Les mouvements automatiques peuvent être arrêtés
+  criteres:
+    - 13.8
 - 
   title: Les fichiers en téléchargement sont accessible
+  criteres:
+    - 13.4
+    - 13.4
 - 
   title: Les zones principales sont définies
+  criteres:
+    - 9.2
 - 
   title: La hiérarchie des titres est cohérente
+  criteres:
+    - 9.1
 - 
   title: Les images ont une alternative
 - 
