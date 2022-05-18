@@ -43,16 +43,34 @@ Items:
   title: Une page est dédiée à l’accessibilité
 - 
   title: La langue du site est pertinente
+  criteres:
+    - 8.3
+    - 8.4
 - 
   title: Il existe 2 moyens de naviguer
+  criteres:
+    - 12.1
 - 
   title: Chaque page contient des liens d'accès rapide
+  criteres:
+    - 12.6
+    - 12.7
 - 
   title: Le site est utilisable au clavier
+  criteres:
+    - 12.8
+    - 12.9
+    - 12.11
+    - 10.7
 - 
   title: Aucune information n'est véhiculée uniquement par la couleur
+  criteres:
+    - 3.1
 - 
   title: Les éléments sont suffisement contrastés
+  criteres:
+    - 3.2
+    - 3.3
 - 
   title: Les actions sont explicites
 - 
