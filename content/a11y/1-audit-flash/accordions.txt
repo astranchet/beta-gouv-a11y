@@ -8,8 +8,6 @@ Intro:
 
 ## Critères 
 
-(Descriptions à venir)
-
 ----
 
 Items:
@@ -19,7 +17,7 @@ Items:
   steps:
     - Utiliser le validateur officiel du W3C
   checks:
-    - La page ne comporte aucunes erreurs HTML
+    - La page ne comporte aucune erreurs HTML
   criteres:
     - 8.1
     - 8.2
@@ -39,24 +37,53 @@ Items:
     - 8.6
 - 
   title: Le niveau d'accessibilité est affiché sur toutes les pages
+  checks:
+    - Le composant Pied de page du DSFR est utilisé
 - 
   title: Une page est dédiée à l’accessibilité
+  who: "Les personnes concernées par l’accessibilité numérique"
 - 
   title: La langue du site est pertinente
+  who: "Les personnes qui utilisent la synthèse vocale (personnes aveugles, dyslexiques, maîtrisant mieux le français oral que le français écrit...)"
+  steps:
+    - Regarder dans le code source l’attribute lang
+    - Utiliser le site wave.webaim.org
+  checks:
+    - Les pages sont indiquées comme étant en français
   criteres:
     - 8.3
     - 8.4
 - 
   title: Il existe 2 moyens de naviguer
+  who: Tout le monde
+  steps:
+    - "Il existe au moins 2 moyens de navigation parmi :"
+  checks:
+    - Recherche
+    - Fil d'ariane
+    - Menu
+    - Plan du site
   criteres:
     - 12.1
 - 
   title: Chaque page contient des liens d'accès rapide
+  who: Les personnes qui naviguent au clavier, ou qui utilisent un lecteur d’écran.
+  steps:
+    - Naviguer au clavier pour faire apparaître les liens.
+  check:
+    - Le composant Liens d'évitement du DSFR permet d'accéder au contenu
   criteres:
     - 12.6
     - 12.7
 - 
   title: Le site est utilisable au clavier
+  who: Les personnes qui naviguent au clavier (personnes ayant des troubles moteurs, personnes aveugles...)
+  steps:
+    - Naviguer au clavier
+  checks:
+    - L’ordre de navigation est cohérent
+    - Il n’y a pas de piège au clavier
+    - Tous les éléments sont actionnables
   criteres:
     - 12.8
     - 12.9
@@ -64,15 +91,33 @@ Items:
     - 10.7
 - 
   title: Aucune information n'est véhiculée uniquement par la couleur
+  who : Les personnes daltoniennes, ou ayant des troubles de la vision
+  steps:
+    - Parcourir le service et porter son attention particulièrement sur
+  checks:
+    - Les formulaires et les messages d'erreurs
+    - Les infographies et graphiques
+    - Les informations de statut
+    - Les éléments actifs (menu, onglet...)
   criteres:
     - 3.1
 - 
   title: Les éléments sont suffisement contrastés
+  who : Les personnes ayant des troubles de la vision, les personnes âgées, les personnes naviguant depuis leur téléphone en extérieur.
+  steps:
+    - Utiliser un outil de vérification de contrastes (ANDI, Wave, ConstrastChecker...)
+  checks:
+    - Construire une palette de couleurs accessibles
   criteres:
     - 3.2
     - 3.3
 - 
   title: Les actions sont explicites
+  who: Tout le monde (mais plus particulièrement les personnes qui utilisent un lecteur d’écran, les personnes neuro-atypiques, les personnes avec une faible concentration)
+  steps:
+    - Vérifier les intitulés des liens avec le bookmarklet a11y-outline ou ANDI (module Links/Buttons)
+  checks : 
+    - Les intitulés sont pertinents
   criteres:
     - 6.1
     - 6.2
@@ -92,6 +137,9 @@ Items:
 - 
   title: Le site est compréhensible sans styles
   criteres:
+    - 8.9
+    - 9.3
+    - 9.4
     - 10.1
     - 10.2
     - 10.3
@@ -119,7 +167,7 @@ Items:
 - 
   title: Les fichiers en téléchargement sont accessible
   criteres:
-    - 13.4
+    - 13.3
     - 13.4
 - 
   title: Les zones principales sont définies
@@ -131,5 +179,12 @@ Items:
     - 9.1
 - 
   title: Les images ont une alternative
+  criteres:
+    - 1.1
+    - 1.2
+    - 1.3
+    - 1.6
+    - 1.7
+    - 1.9
 - 
   title: Les vidéos ont une alternative
