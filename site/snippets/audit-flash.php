@@ -16,8 +16,8 @@
 		<div class="fr-fieldset__content">
 			<?php foreach ($item->checks()->yaml() as $id => $check): ?>
 			<div class="fr-checkbox-group">
-				<input type="checkbox" id="checkboxes-<?= $id ?>" name="checkboxes-<?= $id ?>">
-				<label class="fr-label" for="checkboxes-<?= $id ?>"><?= $check ?>
+				<input type="checkbox" id="checkboxes-<?= $item->title()->slug().$id ?>" name="checkboxes-<?= $id ?>">
+				<label class="fr-label" for="checkboxes-<?= $item->title()->slug().$id ?>"><?= $check ?>
 			</label>
 			</div>
 			<?php endforeach ?>
