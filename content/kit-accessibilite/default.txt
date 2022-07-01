@@ -2,9 +2,7 @@ Title: Kit Accessibilité
 
 ----
 
-Text: <p class="fr-text--lead">beta.gouv.fr accompagne les Startups d’État dans leur démarche d'accessibilité, tout au long de la vie du produit.</p>
-
-		<p>L’accessibilité est une démarche sur le long terme : elle se pense dès l'investigation du service, elle est est régulièrement évaluée pendant la construction puis tout au long de la durée d’exploitation du service.</p>
+Text: <p class="fr-text--lead">Le <a href="<?= page('kit-accessibilite') ?>" class="fr-link fr-text--lead">Kit d’Accessibilité</a> guide les Startups d’État dans une démarche sur le long terme, de l’investigation du service jusqu’à sa consolidation.</p>
 
 ----
 

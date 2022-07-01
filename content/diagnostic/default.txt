@@ -1,1 +1,24 @@
 Title: Diagnostic
+----
+Tiles:
+
+-
+	title: Premiers soins
+	desc: Identifier les plus gros problèmes d’accessibilité.
+	link: /diagnostic#premiers-soins
+-
+	title: Audit flash
+	desc: Faire un état des lieux du service en une demi journée.
+	link: /diagnostic#audit-flash
+-
+	title: Tests automatisés
+	desc: Péréniser les efforts et éviter les régressions.
+	link: /diagnostic#tests-autos
+-
+	title: Tests utilisateurs
+	desc: Améliorer l'usabilité, au delà de la conformité.
+	link: /diagnostic#user-tests
+-
+	title: Audit de confirmité
+	desc: Certifier l’accessibilité du service numérique.
+	link: /diagnostic#conformité

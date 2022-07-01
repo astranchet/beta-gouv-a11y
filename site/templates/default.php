@@ -13,6 +13,13 @@
 					<?php snippet('dsfr/card', ['card' => $card]) ?>
 				</div>
 			<?php endforeach ?>
+
+			<?php foreach ($page->tiles()->toStructure() as $tile): ?>			
+    			<div class="fr-col">
+					<?php snippet('dsfr/tile', ['tile' => $tile]) ?>
+				</div>
+			<?php endforeach ?>
+
 		</div>
 		
 	</div>
