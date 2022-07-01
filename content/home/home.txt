@@ -1,8 +1,28 @@
-Title: Accessibilité
+Title: Accueil
 
 ----
 
 Cards:
+
+-
+	title: Investigation
+	desc: Penser à la manière dont chacun utilisera le service.
+	link: /kit-accessibilite#investigation
+-
+	title: Construction
+	desc: Mettre en place des bases saines.
+	link: /kit-accessibilite#construction
+- 
+	title: Accélération
+	desc: Outiller et péréniser  la mise en accessibilité.
+	link: /kit-accessibilite#acceleration
+- 
+	title: Transfert
+	desc: Concrétiser et consolider les efforts d’accessibilité.
+	link: /kit-accessibilite#transfert
+
+----
+Cards-old:
 
 -
 	title: Auto-diagnostic

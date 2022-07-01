@@ -1,0 +1,28 @@
+Title: Kit Accessibilité
+
+----
+
+Text: <p class="fr-text--lead">beta.gouv.fr accompagne les Startups d’État dans leur démarche d'accessibilité, tout au long de la vie du produit.</p>
+
+		<p>L’accessibilité est une démarche sur le long terme : elle se pense dès l'investigation du service, elle est est régulièrement évaluée pendant la construction puis tout au long de la durée d’exploitation du service.</p>
+
+----
+
+Cards:
+
+-
+	title: Investigation
+	desc: Penser à la manière dont chacun utilisera le service.
+	link: https://doc.incubateur.net/communaute/gerer-sa-startup-detat-ou-de-territoires-au-quotidien/jameliore-le-design-et-lexperience-utilisateur/accessibilite-et-rgaa/kit-accessibilite/investigation
+-
+	title: Construction
+	desc: Mettre en place des bases saines.
+	link: https://doc.incubateur.net/communaute/gerer-sa-startup-detat-ou-de-territoires-au-quotidien/jameliore-le-design-et-lexperience-utilisateur/accessibilite-et-rgaa/kit-accessibilite/construction
+- 
+	title: Accélération
+	desc: Outiller et péréniser  la mise en accessibilité.
+	link: https://doc.incubateur.net/communaute/gerer-sa-startup-detat-ou-de-territoires-au-quotidien/jameliore-le-design-et-lexperience-utilisateur/accessibilite-et-rgaa/kit-accessibilite/acceleration
+- 
+	title: Transfert
+	desc: Concrétiser et consolider les efforts d’accessibilité.
+	link: https://doc.incubateur.net/communaute/gerer-sa-startup-detat-ou-de-territoires-au-quotidien/jameliore-le-design-et-lexperience-utilisateur/accessibilite-et-rgaa/kit-accessibilite/consolidation
