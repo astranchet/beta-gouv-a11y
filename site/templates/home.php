@@ -2,14 +2,7 @@
 
 <main id="content" role="main">
 
-	<div class="hero">
-		<div class="fr-container fr-container--fluid fr-py-8w">
-			<div class="fr-col-12">
-				<h1>Concevoir des services publics accessibles à tous.</h1>
-				<p class="fr-text--lead"><b>beta.gouv.fr</b> accompagne les Startups d’État dans leur démarche d'accessibilité, <b>tout au long de la vie du produit</b>.</p>
-			</div>
-		</div>
-	</div>
+	<?php snippet('hero', ['title' => $page->hero(), 'lead' => $page->lead()]) ?>
 
 	<div class="fr-container fr-container--fluid fr-my-8w">
 		<h2>Suivez le guide</h2>

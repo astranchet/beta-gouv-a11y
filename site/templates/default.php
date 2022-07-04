@@ -1,6 +1,11 @@
 <?php snippet('dsfr/header') ?>
 
 <main id="content" role="main">
+
+	<?php if($page->hero()): ?>
+		<?php snippet('hero', ['title' => $page->hero(), 'lead' => $page->lead()]) ?>
+	<?php endif; ?>
+	
 	<div class="fr-container fr-container--fluid fr-my-8w">
 
 		<h1><?= $page->title() ?></h1>

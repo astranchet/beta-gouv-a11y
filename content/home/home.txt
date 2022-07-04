@@ -1,6 +1,10 @@
 Title: Accueil
 
 ----
+Hero: Concevoir des services publics accessibles à tous.
+----
+Lead: **beta.gouv.fr** accompagne les Startups d’État dans leur démarche d'accessibilité, **tout au long de la vie du produit**.
+----
 
 Kit:
 

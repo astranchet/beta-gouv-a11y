@@ -1,8 +1,9 @@
 Title: Kit Accessibilité
 
 ----
-
-Text: <p class="fr-text--lead">Le <a href="<?= page('kit-accessibilite') ?>" class="fr-link fr-text--lead">Kit d’Accessibilité</a> guide les Startups d’État dans une démarche sur le long terme, de l’investigation du service jusqu’à sa consolidation.</p>
+Hero: Suivez le guide
+----
+Lead: Le <a href="<?= page('kit-accessibilite') ?>" class="fr-link fr-text--lead">Kit d’Accessibilité</a> guide les Startups d’État dans une démarche sur le long terme, de l’investigation du service jusqu’à sa consolidation.
 
 ----
 
